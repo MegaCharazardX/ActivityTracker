@@ -10,7 +10,7 @@ import tkinter.messagebox
 import customtkinter
 
 customtkinter.set_appearance_mode("System")  # Modes: "System" (standard), "Dark", "Light"
-customtkinter.set_default_color_theme(r"CTkThemesPack-main\CTkThemesPack-main\themes\coffee.json")  # Themes: "blue" (standard), "green", "dark-blue"
+customtkinter.set_default_color_theme(r"CTkThemesPack-main\CTkThemesPack-main\themes\rime.json")  # Themes: "blue" (standard), "green", "dark-blue"
 
 
 class App(customtkinter.CTk):
@@ -165,7 +165,7 @@ class App(customtkinter.CTk):
     def sidebar_button_event(self):
         print("sidebar_button click")
 
-
+ 
 if __name__ == "__main__":
     app = App()
     app.mainloop()
