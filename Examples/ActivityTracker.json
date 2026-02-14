@@ -1,0 +1,8 @@
+{
+    "ActivitTraker" : {
+        "IsInit" : ["False", 0],
+        "User" : "",
+        "Theme" : "rime",
+        "AppearanceMode" : "System"
+    }
+}
