@@ -7,28 +7,30 @@ key = ['d', 'H', 'v', 'b', 'r', '7', 'T', 'S', 'M', 'E', 'W', 'A', 'K', 'e', 'i'
 
 class crypt :
     #ENCRYPT
-    def __init__(self, _text):
-        self.text = _text
+    def __init__(self, _text, type = "password") :
+        self.__text = _text 
+        self.type = type
+        #add algorithm for Pins
 
     def encrypt(self):
-        cipher_text = ""
+        self.__cipher_text = ""
 
-        for letter in self.text:
+        for letter in self.__text:
             if letter in string.punctuation :
-                cipher_text += letter
+                self.cipher_text += letter
             else :
                 index = chars.index(letter)
-                cipher_text += key[index]
+                self.__cipher_text += key[index]
 
-        return cipher_text
+        return self.__cipher_text
 
     #DECRYPT
     def decrypt(self):
         plain_text = ""
 
-        if type(self.text) == list or type(self.text) == tuple :
+        if type(self.__text) == list or type(self.__text) == tuple :
            
-            for word in self.text:                
+            for word in self.__text:                
                 for letter in word:
                     if letter in string.punctuation :
                         plain_text += letter
@@ -40,7 +42,7 @@ class crypt :
 
         else :
         
-            for letter in self.text:
+            for letter in self.__text:
                 if letter in string.punctuation :
                     plain_text += letter
                 else :
@@ -49,4 +51,4 @@ class crypt :
 
             return plain_text
         
-print(crypt("NiULUoULctlt").encrypt())
+print(crypt("Password").encrypt())

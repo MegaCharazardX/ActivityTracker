@@ -1,8 +1,1 @@
-{
-    "ActivitTraker" : {
-        "IsInit" : ["False", 0],
-        "User" : "",
-        "Theme" : "rime",
-        "AppearanceMode" : "System"
-    }
-}
+{"ActivityTracker": {"IsInit": ["False", 0], "User": "", "Theme": "rime", "AppearanceMode": "System", "IsloggedIn": "False", "LastLogIn": "2026-02-19 03:21:43.414121", "SessionID": "19no02PU20hx26Jy"}}

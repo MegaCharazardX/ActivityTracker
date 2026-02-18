@@ -2,14 +2,17 @@ import os
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
-DOCUMENTS_DIR = os.path.expanduser('~\Documents\\')
+DOCUMENTS_DIR = os.path.expanduser('~\\Documents\\')
 INIT_DATA_FILE_VALUES = { 
-                            "ActivitTraker" : {
+                            "ActivityTracker" : {
                             "IsInit" : ["False", 0],
                             "User" : "",
                             "Theme" : "rime",
-                            "AppearanceMode" : "System"
+                            "AppearanceMode" : "System",
+                            "IsloggedIn" : "False",
+                            "LastLogIn" : "",
+                            "SessionID" : ""
                             }
                         }
 
-print(BASE_DIR)
+#print(INIT_DATA_FILE_VALUES["ActivitTraker"]["Theme"])
